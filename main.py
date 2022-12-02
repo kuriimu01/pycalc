@@ -18,8 +18,10 @@ class App(customtkinter.CTk):
         
         # configure window
         self.title("Calculator by kuriimu01")
+        self.iconbitmap('./img/icon.ico')
         self.geometry(f"{App.WIDTH}x{App.HEIGHT}")
         self.grid_columnconfigure(0, weight=1)
+        
         
         # create main entry
         self.entry = customtkinter.CTkEntry(self, height=60, justify=RIGHT,
